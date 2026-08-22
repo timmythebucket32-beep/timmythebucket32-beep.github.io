@@ -1,0 +1,60 @@
+
+.header {
+            display: flex; /* This turns div into a flex container meaning elements can be arranged into columns or rows*/
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 25px;
+            background-color: #60b2df;
+        }
+
+        .logo img {
+            height: 65px;
+            width: auto;
+            display: block;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 40px; /* gap between nav links */
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            background-color: rgb(216, 104, 84);
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            border-radius: 10px;
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            color: black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #eeb2b2;
+            border-radius: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
