@@ -148,6 +148,16 @@ nav{
     max-width:900px;
 }
 
+.built-by{
+
+  font-size: 0.95rem;
+
+  color: #a0aec0; /* subtle lighter gray to match your dark theme */
+  margin-top: 0.5rem;
+
+  font-style: italic;
+}
+
 .hero h1{
 
     font-family:'Orbitron',sans-serif;
@@ -189,7 +199,7 @@ nav{
 
     justify-content:center;
 
-    gap:30px;
+    gap: 1rem;
 }
 
 .primary-button{
@@ -205,6 +215,8 @@ nav{
     border-radius:8px;
 
     font-weight:600;
+
+    margin-right: 20px;
 }
 
 .secondary-button{
@@ -230,6 +242,12 @@ nav{
 
     justify-content:center;
 
+    flex-direction: row;
+
+    flex-wrap: wrap; /* Allows text to drop below when space runs out */
+
+    gap: 2rem;
+
     align-items:center;
 
     gap:80px;
@@ -241,9 +259,11 @@ nav{
 
     width:300px;
 
-    height:300px;
+    height: 300px;
 
     background-image: url("./images/portrait.jpg");
+    background-size: cover;
+    background-position: center;
 
     border-radius:20px;
 
