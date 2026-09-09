@@ -1,0 +1,327 @@
+/* ========================================= */
+/* PROJECTS PAGE */
+/* ========================================= */
+
+
+/* ========================================= */
+/* PAGE HEADER */
+/* ========================================= */
+
+.projects-header{
+
+    min-height:420px;
+
+    margin-top:80px;
+
+    background:
+        linear-gradient(
+            rgba(11,15,20,.35),
+            rgba(11,15,20,.9)
+        ),
+        url("../images/projects-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.projects-header-overlay{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:80px 40px;
+}
+
+.projects-header h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    letter-spacing:-2px;
+}
+
+.projects-intro{
+
+    max-width:700px;
+
+    color:var(--subtext);
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+}
+
+
+/* ========================================= */
+/* PROJECT CONTAINER */
+/* ========================================= */
+
+.projects-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0 40px 120px;
+}
+
+
+/* ========================================= */
+/* INDIVIDUAL PROJECT */
+/* ========================================= */
+
+.project{
+
+    padding:90px 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+
+/* ========================================= */
+/* PROJECT HEADING */
+/* ========================================= */
+
+.project-heading{
+
+    max-width:900px;
+
+    margin-bottom:70px;
+}
+
+.project-number{
+
+    color:var(--accent);
+
+    font-size:.75rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+.project-heading h2{
+
+    font-size:2.7rem;
+
+    margin-bottom:20px;
+}
+
+.project-description{
+
+    color:var(--subtext);
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    max-width:800px;
+}
+
+
+/* ========================================= */
+/* PROJECT TAGS */
+/* ========================================= */
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+}
+
+.project-tags span{
+
+    color:var(--accent);
+
+    border:1px solid rgba(95,201,255,.35);
+
+    background:rgba(95,201,255,.05);
+
+    padding:7px 12px;
+
+    border-radius:5px;
+
+    font-size:.8rem;
+}
+
+
+/* ========================================= */
+/* CONTENT ROW */
+/* ========================================= */
+
+.project-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+    margin-bottom:100px;
+}
+
+
+/* Flips image/text sides */
+
+.project-row.reverse{
+
+    flex-direction:row-reverse;
+}
+
+
+/* ========================================= */
+/* IMAGE */
+/* ========================================= */
+
+.project-image{
+
+    flex:1;
+
+    min-width:0;
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:400px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:8px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.project-image img:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(95,201,255,.4);
+}
+
+
+/* ========================================= */
+/* PROJECT TEXT */
+/* ========================================= */
+
+.project-text{
+
+    flex:1;
+}
+
+.content-label{
+
+    color:var(--accent);
+
+    font-size:.75rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+}
+
+.project-text h3{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.project-text p{
+
+    color:var(--subtext);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+}
+
+
+/* Don't turn content label gray */
+
+.project-text .content-label{
+
+    color:var(--accent);
+}
+
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media(max-width:800px){
+
+    .projects-header{
+
+        padding:130px 25px 60px;
+    }
+
+    .projects-header h1{
+
+        font-size:3rem;
+    }
+
+    .projects-container{
+
+        padding:0 25px 80px;
+    }
+
+    .project{
+
+        padding:65px 0;
+    }
+
+    .project-heading h2{
+
+        font-size:2.2rem;
+    }
+
+
+    /* Stack images and text */
+
+    .project-row,
+    .project-row.reverse{
+
+        flex-direction:column;
+
+        gap:35px;
+
+        margin-bottom:70px;
+    }
+
+    .project-image,
+    .project-text{
+
+        width:100%;
+    }
+
+    .project-image img{
+
+        height:auto;
+    }
+
+    .project-text h3{
+
+        font-size:1.7rem;
+    }
+
+}
